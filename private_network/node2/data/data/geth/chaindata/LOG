@@ -1,0 +1,26 @@
+=============== Dec 3, 2024 (IST) ===============
+20:04:23.073095 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:04:23.201634 db@open opening
+20:04:23.206953 version@stat F·[] S·0B[] Sc·[]
+20:04:23.332394 db@janitor F·2 G·0
+20:04:23.332394 db@open done T·130.7599ms
+=============== Dec 3, 2024 (IST) ===============
+20:56:35.031112 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:56:35.034115 version@stat F·[] S·0B[] Sc·[]
+20:56:35.034115 db@open opening
+20:56:35.035001 journal@recovery F·1
+20:56:35.162316 journal@recovery recovering @1
+20:56:35.645807 memdb@flush created L0@2 N·21271 S·2MiB "\x00\x00\xae..\x82\x88\x11,v497":"\xff\xfc\x94..\xa5\x05\xa1,v626"
+20:56:35.650410 version@stat F·[1] S·2MiB[2MiB] Sc·[0.25]
+20:56:35.831336 db@janitor F·3 G·0
+20:56:35.831336 db@open done T·796.6758ms
+=============== Dec 3, 2024 (IST) ===============
+20:57:14.455228 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:57:14.458510 version@stat F·[1] S·2MiB[2MiB] Sc·[0.25]
+20:57:14.458510 db@open opening
+20:57:14.460515 journal@recovery F·1
+20:57:14.461859 journal@recovery recovering @3
+20:57:14.497508 memdb@flush created L0@5 N·1 S·204B "unc..own,v21273":"unc..own,v21273"
+20:57:14.505723 version@stat F·[2] S·2MiB[2MiB] Sc·[0.50]
+20:57:14.620348 db@janitor F·4 G·0
+20:57:14.620348 db@open done T·161.8384ms

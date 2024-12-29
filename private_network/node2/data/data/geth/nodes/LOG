@@ -1,0 +1,26 @@
+=============== Dec 3, 2024 (IST) ===============
+20:04:25.267685 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:04:25.352853 db@open opening
+20:04:25.354305 version@stat F·[] S·0B[] Sc·[]
+20:04:25.377659 db@janitor F·2 G·0
+20:04:25.377659 db@open done T·24.8054ms
+=============== Dec 3, 2024 (IST) ===============
+20:56:35.953921 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:56:35.955022 version@stat F·[] S·0B[] Sc·[]
+20:56:35.955022 db@open opening
+20:56:35.955022 journal@recovery F·1
+20:56:35.955633 journal@recovery recovering @1
+20:56:36.025672 memdb@flush created L0@2 N·6 S·279B "loc..seq,v2":"version,v1"
+20:56:36.029152 version@stat F·[1] S·279B[279B] Sc·[0.25]
+20:56:36.284768 db@janitor F·3 G·0
+20:56:36.284768 db@open done T·329.7454ms
+=============== Dec 3, 2024 (IST) ===============
+20:57:14.676102 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:57:14.676651 version@stat F·[1] S·279B[279B] Sc·[0.25]
+20:57:14.676834 db@open opening
+20:57:14.676834 journal@recovery F·1
+20:57:14.678405 journal@recovery recovering @3
+20:57:14.716857 memdb@flush created L0@5 N·1 S·162B "loc..seq,v8":"loc..seq,v8"
+20:57:14.719103 version@stat F·[2] S·441B[441B] Sc·[0.50]
+20:57:14.791898 db@janitor F·4 G·0
+20:57:14.792476 db@open done T·115.6427ms
