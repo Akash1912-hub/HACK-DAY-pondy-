@@ -1,0 +1,19 @@
+node1 = 0x63566367dce1134864C338E156efA5C90d8b7E75 
+password = 12345 
+
+node2 = 0xf200DdB47f43c3Ea5e874511661575B23130110f
+password = 12345
+
+enode://6cce3296bee3b986209b65b30f3e68b403c0a24bc44795beb4037a856e26638b91a932e8bb9278d879fe8d46fea73146fe2914201b34960daa4c1cf7d5ce4f5d@127.0.0.1:0?discport=30301
+
+To Start node1 = geth --datadir "./data"  --port 30304 --bootnodes enode://6cce3296bee3b986209b65b30f3e68b403c0a24bc44795beb4037a856e26638b91a932e8bb9278d879fe8d46fea73146fe2914201b34960daa4c1cf7d5ce4f5d@127.0.0.1:0?discport=30301 --authrpc.port 8547 --ipcdisable --allow-insecure-unlock  --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --networkid 585858  --unlock 0x63566367dce1134864C338E156efA5C90d8b7E75  --password password.txt  --mine --miner.etherbase=0x63566367dce1134864C338E156efA5C90d8b7E75
+
+To Start node2 =  geth --datadir "./data"  --port 30306 --bootnodes enode://6cce3296bee3b986209b65b30f3e68b403c0a24bc44795beb4037a856e26638b91a932e8bb9278d879fe8d46fea73146fe2914201b34960daa4c1cf7d5ce4f5d@127.0.0.1:0?discport=30301  --authrpc.port 8546 --networkid 585858  --unlock 0xf200DdB47f43c3Ea5e874511661575B23130110f --password password.txt
+
+To Start bootnode = bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30301" 
+
+geth console = geth attach http://127.0.0.1:8545 .  
+
+node1 = geth --datadir "./data" --port 30304 --bootnodes "enode://6cce3296bee3b986209b65b30f3e68b403c0a24bc44795beb4037a856e26638b91a932e8bb9278d879fe8d46fea73146fe2914201b34960daa4c1cf7d5ce4f5d@127.0.0.1:0?discport=30301" --authrpc.port 8547 --ipcdisable --allow-insecure-unlock --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net --networkid 585858 --unlock 0x63566367dce1134864C338E156efA5C90d8b7E75 --password password.txt --mine --miner.etherbase=0x63566367dce1134864C338E156efA5C90d8b7E75
+
+ eth.sendTransaction({from: eth.accounts[0], to: "0xd830c082791b309E707124fb1d2c608375951DD9", value: web3.toWei(1, "ether")})
